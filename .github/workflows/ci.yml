@@ -27,6 +27,7 @@ jobs:
 
     - name: Run tests
       run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
         pytest
 
     - name: Train model
